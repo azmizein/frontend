@@ -36,17 +36,16 @@ console.log (move)
         icon: "success"
       })
     }catch (err) {
-      // alert(err.respoonse.data);
-      console.log(err)
+      Swal.fire(err.response.data);
     }
   };
 
     return move ? (
       <Navigate to="/" replace={true}/> 
     ) : (
-     <div className="login">
-      <div className="card">
-        <div className="left">
+     <div class="login">
+      <div class="card2">
+        <div class="left">
           <h1>Welcome Dude</h1>
           <p>
             Welcome to ours website please enter your account besdide here thank you.
@@ -57,7 +56,7 @@ console.log (move)
           </Link> 
         
         </div>
-        <div className="right">
+        <div class="right">
           <h1>Login</h1>
           
             <input type="text" 

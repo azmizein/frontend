@@ -35,17 +35,21 @@ const Register = () => {
       const result = await axios.post("http://localhost:2000/auth/register", inputs);
       // alert(result.data)
       Swal.fire({
-        title:'Register Success Please Check Your Email, For Get your NIM and Verify Your Account',
+        title:'Register Success',
+        text: 'Pls Check Email to See Nim',
         icon:'success'
       }
       )
       setMove(true)
     } catch (err) {
-      Swal.fire(err.response.data);
-      // Swal.fire({
-      //   title: 'Email Already Taken',
-      //   icon: 'error'
-      // })
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: err.response.data.name
+          ? err.response.data.errors[0].message
+          : err.response.data,
+      });
+      
     }
   };
 
@@ -53,9 +57,9 @@ const Register = () => {
       <Navigate to="/login" replace={true}/> 
     ) : ( 
     <>
-     <div className="register">
-      <div className="card">
-        <div className="left">
+     <div class="register">
+      <div class="card1">
+        <div class="left">
           <h1>Welcome Dude</h1>
           <p>
             Welcome to ours website please enter your account besdide here thank you.
@@ -65,7 +69,7 @@ const Register = () => {
             <button>Login</button>
           </Link>
         </div>
-        <div className="right">
+        <div class="right">
           <h1>Register</h1>
           <form>
             <input type="text"

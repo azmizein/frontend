@@ -27,23 +27,22 @@
       text-decoration: none;
   }
   nav ul li #fb{
-      background: #0B84ED;
-      color: #fff;
-      width: 40px;
+      color: red;
+      width: auto;
       height: 40px;
-      border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 2rem;
   }
+
   nav ul li #search_btn{
       border: none;
       outline: none;
       background: rgba(0, 0, 0, 0.068);
       padding: 8px;
       color: #888;
-      width: 200px;
+      width: 500px;
       height: 40px;
       font-size: 1rem;
       border-top-right-radius: 50px;
@@ -69,9 +68,8 @@
       transition: .5s;
 
   }
-  nav ul li #btn_plus,
-  nav ul li #btn_msg,
-  nav ul li #btn_bell,
+  nav ul li #btn_logout,
+
   nav ul li #btn_profile{
       height: 40px;
       width: 40px;
