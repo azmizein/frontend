@@ -44,7 +44,7 @@ const Navbar = () => {
                <li>
                 {username ? 
                 <DropdownButton id="dropdown-basic-button" title={username}>
-                <Link to="/login">Logout</Link>
+                <Link onClick={onLogout} to="/login">Logout</Link>
                 </DropdownButton> 
                 :
                 <DropdownButton id="dropdown-basic-button" title="pls login">

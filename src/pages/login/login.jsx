@@ -7,7 +7,7 @@ import {Navigate} from "react-router-dom"
 import { login } from "../../redux/userSlice";
 import Swal from 'sweetalert2'
 
-const url = "http://localhost:2000/auth/login"
+const url = "http://localhost:2000/login"
 
 const Login = () => {
 

@@ -32,7 +32,7 @@ const Register = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      const result = await axios.post("http://localhost:2000/auth/register", inputs);
+      const result = await axios.post("http://localhost:2000/register", inputs);
       // alert(result.data)
       Swal.fire({
         title:'Register Success',

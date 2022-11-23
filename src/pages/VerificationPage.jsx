@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Axios from "axios";
-const url = "http://localhost:8000/auth/verification";
+const url = "http://localhost:2000/verification";
 
 export const VerificationPage = () => {
   const [msg, setMsg] = useState("Loading...");

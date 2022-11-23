@@ -14,6 +14,7 @@ export const userSlice = createSlice({
         login: (state, action) => {
             state.value.nim = action.payload.nim;
             state.value.username = action.payload.username;
+            state.value.email = action.payload.email
         },
         logout: (state) => {
             state.value.nim = null;
